@@ -12,7 +12,8 @@ chmod +x fail2ban.sh
 
 ./fail2ban.sh
 
-# Проверка: fail2ban-client status sshd
+# Проверка 
+fail2ban-client status sshd
 
 # Удаление fail2ban
 service fail2ban stop
