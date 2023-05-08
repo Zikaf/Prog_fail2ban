@@ -3,9 +3,13 @@
 
 # Выгрузка с Гит
 apt install git -y
+
 git clone git@github.com:Zikaf/fail2ban.git
+
 cd fail2ban
+
 chmod +x fail2ban.sh
+
 ./fail2ban.sh
 
 # Проверка: fail2ban-client status sshd
