@@ -19,8 +19,8 @@ fail2ban-client status sshd
 ```
 # Удаление fail2ban
 ```
-service fail2ban stop
-apt-get remove --purge fail2ban -y
+systemctl stop fail2ban 
+apt remove --purge fail2ban -y
 rm -rf /etc/fail2ban
 rm -rf /var/log_fail2ban
 ```
