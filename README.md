@@ -18,7 +18,11 @@ rm -r Prog_fail2ban
 fail2ban-client status sshd
 cat /etc/fail2ban/jail.local
 systemctl status fail2ban
+```
+# Управление
+```
 fail2ban-client status
+ fail2ban-client set sshd unbanip "0.0.0.0"
 ```
 # Удаление fail2ban
 ```
