@@ -2,9 +2,10 @@
 Инструкция к установке Fail2ban
 
 # Выгрузка с Гит
->cd
->apt update
-
+```
+cd
+apt update
+```
 apt install git -y
 
 git clone https://github.com/Zikaf/fail2ban.git
