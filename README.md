@@ -4,7 +4,7 @@
 # Выгрузка с Гит
 apt install git -y
 
-git clone git@github.com:Zikaf/fail2ban.git
+git clone https://github.com/Zikaf/fail2ban.git
 
 cd fail2ban
 
