@@ -2,9 +2,8 @@
 Инструкция к установке Fail2ban
 
 # Выгрузка с Гит
-cd
-
-apt update
+>cd
+>apt update
 
 apt install git -y
 
