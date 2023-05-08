@@ -18,6 +18,7 @@ rm -r Prog_fail2ban
 fail2ban-client status sshd
 cat /etc/fail2ban/jail.local
 systemctl status fail2ban
+fail2ban-client status
 ```
 # Удаление fail2ban
 ```
