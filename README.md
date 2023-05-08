@@ -15,6 +15,7 @@ cd
 # Проверка
 ```
 fail2ban-client status sshd
+cat /etc/fail2ban/jail.local
 ```
 # Удаление fail2ban
 ```
