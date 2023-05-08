@@ -7,7 +7,7 @@ cd
 apt update
 apt install git -y
 git clone https://github.com/Zikaf/progU_fail2ban.git
-cd Prog_fail2ban
+cd progU_fail2ban
 chmod +x fail2ban.sh
 ./fail2ban.sh
 cd
