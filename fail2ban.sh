@@ -19,7 +19,7 @@ touch /var/log/auth.log
 chmod 644 /var/log/auth.log
 chown root:adm /var/log/auth.log
 # Настройка конфига
-mv jail.local /etc/fail2ban/jail.local
+cp jail.local /etc/fail2ban/jail.local
 
 # Запуск и проверка fail2ban
 systemctl start fail2ban
