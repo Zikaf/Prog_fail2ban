@@ -16,6 +16,7 @@ cd
 ```
 fail2ban-client status sshd
 cat /etc/fail2ban/jail.local
+systemctl status fail2ban
 ```
 # Удаление fail2ban
 ```
