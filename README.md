@@ -22,7 +22,7 @@ systemctl status fail2ban
 # Управление
 ```
 fail2ban-client status
- fail2ban-client set sshd unbanip "0.0.0.0"
+fail2ban-client set sshd unbanip "0.0.0.0"
 ```
 # Удаление fail2ban
 ```
