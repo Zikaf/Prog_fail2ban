@@ -11,7 +11,7 @@ cd Prog_fail2ban
 chmod +x fail2ban.sh
 ./fail2ban.sh
 cd
-rm -r Prog_fail2ban
+rm -r PprogU_fail2ban
 ```
 # Проверка
 ```
