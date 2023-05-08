@@ -11,7 +11,6 @@ cd fail2ban
 chmod +x fail2ban.sh
 ./fail2ban.sh
 cd
-rm -rf ~/fail2ban
 ```
 # Проверка
 ```
