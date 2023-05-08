@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Установка
+apt update
 apt install fail2ban -y
 
 # Создание директории
