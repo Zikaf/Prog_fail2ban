@@ -1,0 +1,83 @@
+[DEFAULT]
+# Общие настройки
+ignoreip = 127.0.0.1/8
+bantime = 600
+findtime = 600
+maxretry = 3
+
+[sshd]
+# Настройки для SSH
+enabled = true
+port = ssh
+filter = sshd
+logpath = %(sshd_log)s
+maxretry = 5
+
+[vsftpd]
+# Настройки для FTP
+enabled = true
+port = ftp,ftp-data,ftps,ftps-data
+filter = vsftpd
+logpath = /var/log_fail2ban/vsftpd.log
+maxretry = 5
+
+[postgresql]
+# Настройки для Postgresql
+enabled = true
+port = 5432
+filter = postgresql
+logpath = /var/log_fail2ban/postgresql.log
+maxretry = 5
+bantime = 600
+
+[mysqld-auth]
+# Настройки для MySQL
+enabled = true
+port = 3306
+filter = mysqld-auth
+logpath = /var/log_fail2ban/mysqld.log
+maxretry = 5
+bantime = 600
+
+[mongodb-auth]
+enabled = true
+filter = mongodb-auth
+port = 27017
+logpath = /var/log_fail2ban/mongod.log
+maxretry = 3
+bantime = 600
+
+[samba]
+enabled = true
+filter = samba
+port = netbios-ssn,samba
+logpath = /var/log_fail2ban/samba.log
+maxretry = 3
+bantime = 600
+
+[http-get-dos]
+# Настройки для HTTP/HTTPS
+enabled = true
+port = http,https
+filter = apache
+logpath = /var/log_fail2ban/apache2.log
+maxretry = 100
+findtime = 10
+bantime = 600
+
+[nginx-http-auth]
+enabled = true
+filter = nginx-http-auth
+port = http,https
+logpath = /var/log_fail2ban/nginx.log
+maxretry = 3
+bantime = 600
+
+[openvpn]
+enabled = true
+port = 1194
+protocol = udp
+filter = openvpn
+logpath = /var/log_fail2ban/openvpn.log
+maxretry = 3
+bantime = 600
