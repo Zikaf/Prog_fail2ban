@@ -6,12 +6,12 @@
 cd
 apt update
 apt install git -y
-git clone https://github.com/Zikaf/progU_fail2ban.git
-cd progU_fail2ban
+git clone https://github.com/Zikaf/ubuntu_fail2ban.git
+cd ubuntu_fail2ban
 chmod +x fail2ban.sh
 ./fail2ban.sh
 cd
-rm -r PprogU_fail2ban
+rm -r ubuntu_fail2ban
 ```
 # Проверка
 ```
